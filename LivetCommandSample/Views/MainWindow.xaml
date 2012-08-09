@@ -1,0 +1,49 @@
+﻿<Window x:Class="LivetCommandSample.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:l="http://schemas.livet-mvvm.net/2011/wpf"
+        xmlns:LivetCommandSample_Behaviors="clr-namespace:LivetCommandSample.Behaviors"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:v="clr-namespace:LivetCommandSample.Views"
+        xmlns:vm="clr-namespace:LivetCommandSample.ViewModels"
+        Title="MainWindow"
+        Width="525"
+        Height="350"
+        mc:Ignorable="d">
+
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
+
+    <StackPanel Orientation="Vertical" d:LayoutOverrides="Height">
+        <CheckBox Margin="0,0,0,5"
+                  HorizontalAlignment="Left"
+                  Content="CheckBox">
+            <i:Interaction.Behaviors>
+                <LivetCommandSample_Behaviors:CommandTestBehavior Command="{Binding TestCommand, Mode=OneTime}" CommandParameter="check-1" />
+            </i:Interaction.Behaviors>
+        </CheckBox>
+        <CheckBox Margin="0,0,0,5"
+                  HorizontalAlignment="Left"
+                  Content="CheckBox">
+            <i:Interaction.Behaviors>
+                <LivetCommandSample_Behaviors:CommandTestBehavior Command="{Binding TestCommand, Mode=OneTime}" CommandParameter="check-2" />
+            </i:Interaction.Behaviors>
+        </CheckBox>
+        <CheckBox Margin="0,0,0,5"
+                  HorizontalAlignment="Left"
+                  Content="CheckBox">
+            <i:Interaction.Behaviors>
+                <LivetCommandSample_Behaviors:CommandTestBehavior Command="{Binding TestCommand, Mode=OneTime}" CommandParameter="check-3" />
+            </i:Interaction.Behaviors>
+        </CheckBox>
+        <CheckBox HorizontalAlignment="Left" Content="CheckBox">
+            <i:Interaction.Behaviors>
+                <LivetCommandSample_Behaviors:CommandTestBehavior Command="{Binding TestCommand, Mode=OneTime}" CommandParameter="check-4" />
+            </i:Interaction.Behaviors>
+        </CheckBox>
+    </StackPanel>
+</Window>
