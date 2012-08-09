@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivetCommandSample", "LivetCommandSample\LivetCommandSample.csproj", "{7EF26E6B-36E9-419A-B003-66E16FD9FC16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokeCommandActionSample", "InvokeCommandActionSample\InvokeCommandActionSample.csproj", "{F912C45F-5AB3-4F63-825A-7A1768FB7BA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{7EF26E6B-36E9-419A-B003-66E16FD9FC16}.Debug|x86.Build.0 = Debug|x86
 		{7EF26E6B-36E9-419A-B003-66E16FD9FC16}.Release|x86.ActiveCfg = Release|x86
 		{7EF26E6B-36E9-419A-B003-66E16FD9FC16}.Release|x86.Build.0 = Release|x86
+		{F912C45F-5AB3-4F63-825A-7A1768FB7BA3}.Debug|x86.ActiveCfg = Debug|x86
+		{F912C45F-5AB3-4F63-825A-7A1768FB7BA3}.Debug|x86.Build.0 = Debug|x86
+		{F912C45F-5AB3-4F63-825A-7A1768FB7BA3}.Release|x86.ActiveCfg = Release|x86
+		{F912C45F-5AB3-4F63-825A-7A1768FB7BA3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
